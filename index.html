@@ -2,33 +2,185 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>HTML5 page title</title>
+<title>my HTML5 page</title>
 
 <link rel="stylesheet" href="css/style.css" type="text/css" />
 
+<!--[if IE]> 
+	<script src="js/html5.js" type="text/javascript"></script>
+<![endif]--> 
+
+<!--[if lte IE 7]> 
+	<script src="js/IE8.js" type="text/javascript"></script>
+<![endif]--> 
+
+<!--[if lt IE 7]>  
+	<link rel="stylesheet" type="text/css" media="all" href="css/ie6.css"/>
+<![endif]-->
+
 </head>
 <body>
-	<header>
-		<h1>My Site</h1>
-	</header>
-
-    <nav>
-		<ul>
-			<li>Home</li>
-			<li>About</li>
-			<li>Contact</li>
-		</ul>
-	</nav>
-	<section>
-		<h1>My Article</h1>
-		
-		<article>
-			<p>This is a sample article content</p>
-		</article>
-	</section>
+	<header id="banner" class="body">
+		<h1>BlueRain Teklab</h1>
 	
-	<footer>
-		<p>This is footer</p>
-	</footer>
+		<nav>
+			<ul>
+				<li class="active"><a href="#">home</a></li>
+				<li><a href="#">portfolio</a></li>
+				<li><a href="#">blog</a></li>
+				<li><a href="#">contact</a></li>
+			</ul>
+		</nav>	
+	</header>
+	
+	<aside id="featured" class="body">
+		<article> 
+			<figure> 
+				<img src="http://www.bluewaterprod.com/images/comics/logos/rain_logo.png"  alt="rain logo" /> 
+			</figure> 
+			
+			<hgroup>  
+				<h2>Featured Article</h2> 
+				<h3><a href="#">HTML5 Samples!</a></h3> 
+			</hgroup> 
+			
+			<p>
+				Discover how to use Graceful Degradation and Progressive Enhancement techniques 
+					to achieve an outstanding, cross-browser 
+					<a href="http://dev.w3.org/html5/spec/Overview.html" rel="external">
+						HTML5
+					</a> and 
+					<a href="http://www.w3.org/TR/css3-roadmap/" rel="external">
+						CSS3
+					</a> website today!
+			</p>  
+		</article>
+	</aside>
+	
+	<section id="content" class="body">
+		
+		<ol id="posts-list" class="hfeed">
+			<li><article class="hentry">	
+				<header>
+					<h2 class="entry-title"><a href="#" rel="bookmark" title="Permalink to this POST TITLE">This be the title</a></h2>
+				</header>
+				
+				<footer class="post-info">
+					<abbr class="published" title="">
+						18th February 2013
+					</abbr>
+
+					<address class="vcard author">
+						By <a class="url fn" href="#">Harris Rainier Osiana</a>
+					</address>
+				</footer><!-- /.post-info -->
+				
+				<div class="entry-content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis nunc vitae libero iaculis elementum. Nullam et justo <a href="#">non sapien</a> dapibus blandit nec et leo. Ut ut malesuada tellus.</p>
+				</div><!-- /.entry-content -->
+			</article></li>
+			
+			<li><article class="hentry">	
+				<header>
+					<h2 class="entry-title"><a href="#" rel="bookmark" title="Permalink to this POST TITLE">This be the title</a></h2>
+				</header>
+				
+				<footer class="post-info">
+					<abbr class="published" title="">
+						18th February 2013
+					</abbr>
+
+					<address class="vcard author">
+						By <a class="url fn" href="#">Harris Rainier Osiana</a>
+					</address>
+				</footer><!-- /.post-info -->
+				
+				<div class="entry-content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis nunc vitae libero iaculis elementum. Nullam et justo <a href="#">non sapien</a> dapibus blandit nec et leo. Ut ut malesuada tellus.</p>
+				</div><!-- /.entry-content -->
+			</article></li>
+			
+			<li><article class="hentry">	
+				<header>
+					<h2 class="entry-title"><a href="#" rel="bookmark" title="Permalink to this POST TITLE">This be the title</a></h2>
+				</header>
+				
+				<footer class="post-info">
+					<abbr class="published" title="">
+						18th February 2013
+					</abbr>
+
+					<address class="vcard author">
+						By <a class="url fn" href="#">Harris Rainier Osiana</a>
+					</address>
+				</footer><!-- /.post-info -->
+				
+				<div class="entry-content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis nunc vitae libero iaculis elementum. Nullam et justo <a href="#">non sapien</a> dapibus blandit nec et leo. Ut ut malesuada tellus.</p>
+				</div><!-- /.entry-content -->
+			</article></li>
+		</ol><!-- /#posts-list -->
+	</section><!-- /#content -->
+	
+	<section id="extras" class="body">
+		<div class="blogroll">
+		<h2>blogroll</h2>
+		
+		<ul>
+				<li><a href="#" rel="external">HTML5 Link</a></li>
+				<li><a href="#" rel="external">HTML5 Link</a></li>
+				<li><a href="#" rel="external">HTML5 Link</a></li>
+				<li><a href="#" rel="external">HTML5 Link</a></li>
+				<li><a href="#" rel="external">HTML5 Link</a></li>
+				<li><a href="#" rel="external">HTML5 Link</a></li>
+				
+				<li><a href="#" rel="external">HTML5 Link</a></li>
+				<li><a href="#" rel="external">HTML5 Link</a></li>
+				<li><a href="#" rel="external">HTML5 Link</a></li>
+				<li><a href="#" rel="external">HTML5 Link</a></li>
+				<li><a href="#" rel="external">HTML5 Link</a></li>
+				<li><a href="#" rel="external">HTML5 Link</a></li>
+				
+				<li><a href="#" rel="external">HTML5 Link</a></li>
+				<li><a href="#" rel="external">HTML5 Link</a></li>
+				<li><a href="#" rel="external">HTML5 Link</a></li>
+				<li><a href="#" rel="external">HTML5 Link</a></li>
+				<li><a href="#" rel="external">HTML5 Link</a></li>
+				<li><a href="#" rel="external">HTML5 Link</a></li>
+		</ul>
+		
+		</div><!-- /.blogroll -->
+		
+		<div class="social">
+		<h2>social</h2>
+		
+		<ul>
+			<li><a href="" rel="me">facebook</a></li>
+			<li><a href="" rel="me">twitter</a></li>
+			<li><a href="" rel="me">linkedin</a></li>
+			<li><a href="" rel="me">digg</a></li>
+			<li><a href="" rel="me">wordpress</a></li>
+			<li><a href="" rel="me">pinterest</a></li>
+		</ul>
+		
+		</div><!-- /.social -->
+	</section><!-- /#extras -->		
+	
+	<footer id="contentinfo" class="body">
+		<address id="about" class="vcard body">
+		<span class="primary">
+			<strong><a href="#" class="fn url">BlueRain TekLab</a></strong>
+			<span class="role">TekLab</span>
+		</span><!-- /.primary -->
+		
+		<img src="http://gilfolio.com/wp-content/uploads/2011/12/BlueRain_Logo3.png" width="30" height="50" alt="My Logo" class="photo" />
+		<span class="bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </span>
+		</address><!-- /#about -->
+		
+		<p>Copyright 2013 <a href="">BlueRain TekLab</a>.</p>
+		
+	</footer><!-- /#contentinfo -->
+	
+	
 </body>
 </html>
